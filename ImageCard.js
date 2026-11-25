@@ -1,3 +1,4 @@
+
 export class ImageCard{
     constructor(id, titre, prix, url, quantite){
         this.id=id;
@@ -20,10 +21,9 @@ export class ImageCard{
                 </div>
             </div>
         `
-    }
+    } 
 
-    //Mise a jour des quantites des imageCards
-    updateQuantite(){
+    updateRendu(){
         const carte =`
                 <img src="${this.url}" alt="${this.titre}">
                 <p>${this.titre}</p>
@@ -34,18 +34,22 @@ export class ImageCard{
                     <button id="bMoins${this.id}">-</button>
                 </div>    
         `
-        document.getElementById("carte" + this.id).innerHTML=carte      
+        document.getElementById("carte" + this.id).innerHTML=carte
+        document.getElementById("bPlus" + this.id).addEventListener("click", () => this.ajouterArticle());
+        document.getElementById("bMoins" + this.id).addEventListener("click", () => this.retirerArticle());       
+
     }
+
 
     ajouterArticle(){
         this.quantite+=1;
-        this.updateQuantite()
+        this.updateRendu()
     }
 
     retirerArticle(){
         if (this.quantite>0) {
             this.quantite-=1;
-            this.updateQuantite()
+            this.updateRendu()
         }
     }
 }

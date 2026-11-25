@@ -67,7 +67,61 @@ section {
     font-family:"arial";
     font-size:xx-small;
 }
+td img{
+    height: 30px;
+    width: 30px;
+}
+#contenuPanier{
+    background-color: aliceblue;
+    justify-content: center;
+    width: 600px;
+    display: none;
+    position: fixed;
+    left: 20%;
+    top: 10%;
+    border-radius: 25px;
 
+}
+table{
+    justify-content: center;
+    text-align: center;
+    width: 600px;
+}
+
+table caption{
+    height: 50px;
+    justify-content: center;
+    font-family: 'Agency FB', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+
+table tr{
+    height: 20px;
+}
+
+#croix{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 95%;
+    top: 1%;
+    background-color: aliceblue;
+}
+#commande{
+    position: absolute;
+    bottom: 2%;
+    left:40%;
+    background-color: rgb(109, 151, 171);
+    color: azure;
+    font-weight: bold;
+}
+#contenuPanier p{
+    margin: 25px;
+    margin-bottom: 50px;
+}
 #bp p{
     position: absolute;
     left: 1%;
