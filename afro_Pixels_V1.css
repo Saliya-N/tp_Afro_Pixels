@@ -1,0 +1,79 @@
+h1, h2 {
+    font-family: 'Agency FB', sans-serif;
+    color: rgb(158, 122, 31);
+    text-align: center;
+}
+
+h2{
+    border-bottom: double black;
+}
+
+button img, header button {
+    background-color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 7%;
+    right: 1%;
+    cursor: pointer;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 50px; 
+}
+
+.artcl {
+    border: solid rgb(158, 122, 31);
+    border-radius: 25px;
+    margin: 5px;
+    padding: 15px;
+    width: 180px; 
+}
+
+.artcl>img {
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    box-shadow: 5px 5px 10px black;
+    display: block;
+    margin: 0 auto;
+}
+
+.artcl>p {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.AjoutRetrait {
+    display: flex;
+    justify-content: center; 
+    font-family: 'Agency FB', sans-serif;
+    margin-top: 10px;
+}
+
+.AjoutRetrait button{
+    margin: 1%;
+    width: 20px;
+    justify-content: center;
+    cursor: pointer; 
+}
+
+.AjoutRetrait p{
+    font-family:"arial";
+    font-size:xx-small;
+}
+
+#bp p{
+    position: absolute;
+    left: 1%;
+    top: 73%;
+    background-color: rgb(158, 122, 31);
+    width: 15px;
+    color: azure;
+
+}
